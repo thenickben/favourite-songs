@@ -17,11 +17,6 @@ const Song = ({ currentSong, isPlaying, setIsPlaying, audioRef }) => {
     );
   };
 
-  const downloadHandler = (e) => {
-    e.preventDefault();
-    window.location.href = link;
-  };
-
   const clickPlayHandler = (currentSong) => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -45,26 +40,9 @@ const Song = ({ currentSong, isPlaying, setIsPlaying, audioRef }) => {
           alt={currentSong.name}
           src={currentSong.cover}
           ref={imgRef}
-          //onClick={() => setShow(!show)}
           onClick={clickPlayHandler}
         ></img>
       </OverlayTrigger>
-      <h5>
-        {/*<Button
-          style={{
-            color: "#363636",
-            fontSize: 10,
-            fontWeight: 500,
-            margin: "5%",
-            boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)",
-          }}
-          variant="outline-primary"
-          onClick={downloadHandler}
-        >
-          Download
-        </Button>*/}
-      </h5>
-
       <h2>{currentSong.name}</h2>
       <h3>{currentSong.artist}</h3>
     </div>

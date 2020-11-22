@@ -10,13 +10,9 @@ const Library = ({
   libraryStatus,
   setLibraryStatus,
 }) => {
-  const showLibraryHandler = () => {
-    setLibraryStatus(!libraryStatus);
-  };
   return (
     <div
       className={`library ${libraryStatus ? "active-library" : "hide-library"}`}
-      onClick={showLibraryHandler}
     >
       <h2>Library</h2>
       <div className="library-songs">

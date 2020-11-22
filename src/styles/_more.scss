@@ -1,0 +1,85 @@
+.more {
+  position: fixed;
+  bottom: 100px;
+  left: 20%;
+  right: 20%;
+  height: 80%;
+  background: white;
+  box-shadow: 2px 2px 50px rgb(146, 146, 146);
+  overflow: scroll;
+  transition: all 0.5s ease;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem 1rem 1rem;
+  box-sizing: "border-box";
+  display: inline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  text-align: center;
+  opacity: 1;
+  padding: 2rem 2rem 2rem 2rem;
+  h1 {
+    color: rgb(27, 27, 27);
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+  }
+  h2 {
+    color: rgb(54, 54, 54);
+    font-size: 1.5rem;
+    font-weight: 50;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 30;
+    color: rgb(100, 100, 100);
+  }
+}
+
+.more-button {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(56, 56, 56);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgb(56, 56, 56);
+      color: white;
+    }
+  }
+}
+
+.active-more {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.hide-more {
+  opacity: 0;
+  transform: translateY(-300%);
+}
+
+@media screen and (max-width: 768px) {
+  .more {
+    padding: 0.5rem 1rem 1rem 1rem;
+    box-sizing: "border-box";
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

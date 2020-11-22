@@ -1,9 +1,11 @@
 import React, { useState, useRef } from "react";
 import Player from "./components/Player";
 import Song from "./components/Song";
-import Video from "./components/Video";
+
 import Library from "./components/Library";
 import Nav from "./components/Nav";
+import MoreButton from "./components/MoreButton";
+import More from "./components/More";
 import "./styles/app.scss";
 import data from "./data";
 
@@ -17,6 +19,7 @@ function App() {
     duration: 0,
   });
   const [libraryStatus, setLibraryStatus] = useState(false);
+  const [showMoreStatus, setShowMoreStatus] = useState(false);
   const audioRef = useRef(null);
 
   const timeUpdateHandler = (e) => {
@@ -37,26 +40,42 @@ function App() {
     }
   };
 
+  const hideMoreHandler = () => {
+    if (showMoreStatus) {
+      setShowMoreStatus(!showMoreStatus);
+    }
+  };
+
+  const hideAllHandler = () => {
+    hideLibraryHandler();
+    hideMoreHandler();
+  };
+
   return (
-    <div className="App" onClick={hideLibraryHandler}>
-      <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
-      <Song
-        currentSong={currentSong}
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-        audioRef={audioRef}
-      />
-      <Player
-        setIsPlaying={setIsPlaying}
-        isPlaying={isPlaying}
-        currentSong={currentSong}
-        audioRef={audioRef}
-        songInfo={songInfo}
-        setSongInfo={setSongInfo}
-        songs={songs}
-        setCurrentSong={setCurrentSong}
-        setSongs={setSongs}
-      />
+    <div>
+      <div className="App" onClick={hideAllHandler}>
+        <Nav
+          libraryStatus={libraryStatus}
+          setLibraryStatus={setLibraryStatus}
+        />
+        <Song
+          currentSong={currentSong}
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
+          audioRef={audioRef}
+        />
+        <Player
+          setIsPlaying={setIsPlaying}
+          isPlaying={isPlaying}
+          currentSong={currentSong}
+          audioRef={audioRef}
+          songInfo={songInfo}
+          setSongInfo={setSongInfo}
+          songs={songs}
+          setCurrentSong={setCurrentSong}
+          setSongs={setSongs}
+        />
+      </div>
       <Library
         songs={songs}
         setCurrentSong={setCurrentSong}
@@ -73,7 +92,11 @@ function App() {
         src={currentSong.audio}
         onEnded={songEndHandler}
       ></audio>
-      {/*<Video />*/}
+      <MoreButton
+        showMoreStatus={showMoreStatus}
+        setShowMoreStatus={setShowMoreStatus}
+      />
+      <More currentSong={currentSong} showMoreStatus={showMoreStatus} />
     </div>
   );
 }

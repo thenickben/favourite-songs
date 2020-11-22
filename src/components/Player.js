@@ -36,7 +36,6 @@ const Player = ({
   };
 
   const playSongHandler = () => {
-    console.log(audioRef);
     if (isPlaying) {
       audioRef.current.pause();
       setIsPlaying(!isPlaying);
