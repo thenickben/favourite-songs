@@ -15,7 +15,7 @@ function songsList() {
       artist: "Dream Theater",
       album: "Metropolis Pt. 2: Scenes from a Memory",
       cover:
-        "https://en.wikipedia.org/wiki/Metropolis_Pt._2:_Scenes_from_a_Memory#/media/File:Dream_Theater_-_Metropolis_Pt._2-_Scenes_from_a_Memory.jpg",
+        "https://3.bp.blogspot.com/-1ILBuoJhSwA/XF7-Dz42ujI/AAAAAAAAyzs/FRJyJvahiBgb0VPFMDAlOjiHqH2rACmxwCLcBGAs/s640/1999%2BMetropolis%2BPt.%2B2%2BScenes%2BFrom%2Ba%2BMemory%2B-%2BDream%2BTheater%2B%2528L.P%2BE.U%2B2014%2BMusic%2BOn%2BVinyl%2BMOVLP1001%2529%2B01.jpg",
       audio: dt_dance,
       genre: "Progressive Metal",
       about:
