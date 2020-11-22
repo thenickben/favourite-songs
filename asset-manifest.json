@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/favourite-songs/static/css/main.1802dbc9.chunk.css",
+    "main.css": "/favourite-songs/static/css/main.74c5fd15.chunk.css",
     "main.js": "/favourite-songs/static/js/main.9d579197.chunk.js",
     "main.js.map": "/favourite-songs/static/js/main.9d579197.chunk.js.map",
     "reactPlayerDailyMotion.js": "/favourite-songs/static/js/reactPlayerDailyMotion.a536da74.chunk.js",
@@ -36,7 +36,7 @@
     "static/js/15.c775ca3c.chunk.js.map": "/favourite-songs/static/js/15.c775ca3c.chunk.js.map",
     "index.html": "/favourite-songs/index.html",
     "static/css/14.43b2b750.chunk.css.map": "/favourite-songs/static/css/14.43b2b750.chunk.css.map",
-    "static/css/main.1802dbc9.chunk.css.map": "/favourite-songs/static/css/main.1802dbc9.chunk.css.map",
+    "static/css/main.74c5fd15.chunk.css.map": "/favourite-songs/static/css/main.74c5fd15.chunk.css.map",
     "static/js/14.13c17371.chunk.js.LICENSE.txt": "/favourite-songs/static/js/14.13c17371.chunk.js.LICENSE.txt",
     "static/media/dt_dance.a036e466.mp3": "/favourite-songs/static/media/dt_dance.a036e466.mp3",
     "static/media/dt_glass.30bfbef0.mp3": "/favourite-songs/static/media/dt_glass.30bfbef0.mp3",
@@ -51,7 +51,7 @@
     "static/js/runtime-main.12645402.js",
     "static/css/14.43b2b750.chunk.css",
     "static/js/14.13c17371.chunk.js",
-    "static/css/main.1802dbc9.chunk.css",
+    "static/css/main.74c5fd15.chunk.css",
     "static/js/main.9d579197.chunk.js"
   ]
 }
