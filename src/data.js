@@ -15,7 +15,7 @@ function songsList() {
       artist: "Dream Theater",
       album: "Metropolis Pt. 2: Scenes from a Memory",
       cover:
-        "http://www.progarchives.com/progressive_rock_discography_covers/378/cover_3756161122008.jpg",
+        "https://en.wikipedia.org/wiki/Metropolis_Pt._2:_Scenes_from_a_Memory#/media/File:Dream_Theater_-_Metropolis_Pt._2-_Scenes_from_a_Memory.jpg",
       audio: dt_dance,
       genre: "Progressive Metal",
       about:
@@ -27,11 +27,11 @@ function songsList() {
       active: true,
     },
     {
-      name: "The Oddysey",
+      name: "The Odyssey",
       artist: "Symphony X",
-      album: "The Oddysey",
+      album: "The Odyssey",
       cover:
-        "https://lh3.googleusercontent.com/proxy/hw99qyI8Z2YRK5ofNc47K78JRxdT59zBTYAaL9GyZjHDgzPdnXgm68XpQ6YLHM0nUuQdT9aJZVYCN_qcmZGeLJ5FOIT_NVk6cy12ncVoImFC3Ewav1oLE2VBXFNB_0iXbJegwBOTlNmJKduyGCFiq1Y9z84",
+        "https://upload.wikimedia.org/wikipedia/en/f/fd/SymphonyXTheOdyssey.jpg",
       audio: symphony_oddysey,
       genre: "Progressive Power Metal",
       about:
@@ -63,7 +63,7 @@ function songsList() {
       artist: "Haken",
       album: "Vector",
       cover:
-        "http://www.progarchives.com/progressive_rock_discography_covers/5598/cover_18371526102018_r.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/Haken_-_Vector_%282018%29.jpg",
       audio: haken_nil,
       genre: "Progressive Metal",
       about:
@@ -110,7 +110,7 @@ function songsList() {
       artist: "Symphony X",
       album: "The Divine Wings of Tragedy",
       cover:
-        "http://www.progarchives.com/progressive_rock_discography_covers/325/cover_15216392016_r.jpg",
+        "https://upload.wikimedia.org/wikipedia/en/a/a9/SymphonyXTheDivineWingsOfTragedy.jpg",
       audio: symphony_sea,
       genre: "Progressive Power Metal",
       about:
