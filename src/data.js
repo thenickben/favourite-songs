@@ -63,7 +63,7 @@ function songsList() {
       artist: "Haken",
       album: "Vector",
       cover:
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/Haken_-_Vector_%282018%29.jpg",
+        "https://i1.sndcdn.com/artworks-HsDG1tOukzWq-0-t500x500.jpg",
       audio: haken_nil,
       genre: "Progressive Metal",
       about:
